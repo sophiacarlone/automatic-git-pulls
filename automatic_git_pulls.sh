@@ -13,8 +13,8 @@ do
 		#this works for some reason
 		if [ "$OUTPUT" == *"Your branch is behind"* ]; then
 			git pull	
-		elif [ "$OUTPUT" != *"up to date with"* ] && [ "$OUTPUT" != *"Changes not staged for commit"* ]; then
-			echo "Possible commits"
+		# elif [ "$OUTPUT" == *"up to date with"* ] && [ "$OUTPUT" == *"Changes not staged for commit"* ]; then
+		# 	echo "Possible commits"
 		fi
 		cd -
 		echo " "
